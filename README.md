@@ -16,7 +16,7 @@ The charts themselves are pretty simple. They are composed of SwiftUI `Shape` el
 
 The data for the chart is an array of `Double` values. The values are percentages of the chart's primary dimension (height for `ColumnChart`, width for `BarChart`). The model, `ChartModel`, converts the user data (temperatures in my example) into percentages so the chart user does not have do that conversion. The model can either use the data or it can be given a specific range (eg, -100°F to +100F) when calculating the percentages.
 
-The percentages are then stored in a very specical data type: `AnimatableVector` (see below) which is `@Published` in the model. When the model's data changes it triggers a new set of percentages and refreshes this vector.
+The percentages are then stored in a very special data type: `AnimatableVector` (see below) which is `@Published` in the model. When the model's data changes it triggers a new set of percentages and refreshes this vector.
 
 ### AnimatableVector
 
@@ -26,7 +26,7 @@ SwiftUI makes it easy to animate its own modifiers like offset, scale, and opaci
 
 Unfortunately, SwiftUI does not provide more than animating a single value and a pair (`AnimatablePair`). What's needed for a chart is animating an array, or vector, of values.
 
-This is where Swift's `VectorArithmetic` comes in. I won't go into details here, but thanks to Majiid Jabrayilov, there is `AnimatableVector` which makes chart animation possible (see Acknowledgements below). But giving a set of values to the vector, a change in that set can be animated by SwiftUI, causing the chart to fluctuate. Its a nice effect. And of course, you can play with the effects used (I just use a simple ease-in-out, but you can use others).
+This is where Swift's `VectorArithmetic` comes in. I won't go into details here, but thanks to [Majiid Jabrayilov](https://swiftwithmajid.com), there is `AnimatableVector` which makes chart animation possible (see Acknowledgements below). By giving a set of values to the vector, a change in that set can be animated by SwiftUI, causing the chart to fluctuate. Its a nice effect and, of course, you can play with the effects used (I just use a simple ease-in-out, but you can use others).
 
 ## The App
 
