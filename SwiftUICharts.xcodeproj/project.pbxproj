@@ -21,6 +21,7 @@
 		324C19BF250AA77900A63812 /* AxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C19B8250AA77900A63812 /* AxisView.swift */; };
 		324C19C0250AA77900A63812 /* ColumnChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C19B9250AA77900A63812 /* ColumnChartView.swift */; };
 		324C19C4250AA7CA00A63812 /* ChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C19C3250AA7CA00A63812 /* ChartTests.swift */; };
+		326FB015250E3A21004F0B95 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FB014250E3A21004F0B95 /* LineChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		324C19B8250AA77900A63812 /* AxisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AxisView.swift; sourceTree = "<group>"; };
 		324C19B9250AA77900A63812 /* ColumnChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnChartView.swift; sourceTree = "<group>"; };
 		324C19C3250AA7CA00A63812 /* ChartTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartTests.swift; sourceTree = "<group>"; };
+		326FB014250E3A21004F0B95 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				324C19B4250AA77900A63812 /* ChartModel.swift */,
 				324C19B9250AA77900A63812 /* ColumnChartView.swift */,
 				324C19B5250AA77900A63812 /* GraphPaperView.swift */,
+				326FB014250E3A21004F0B95 /* LineChartView.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				324C19BF250AA77900A63812 /* AxisView.swift in Sources */,
 				324C19BB250AA77900A63812 /* ChartModel.swift in Sources */,
 				324C19C4250AA7CA00A63812 /* ChartTests.swift in Sources */,
+				326FB015250E3A21004F0B95 /* LineChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

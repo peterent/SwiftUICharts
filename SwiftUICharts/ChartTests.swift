@@ -47,6 +47,15 @@ struct ChartTests: View {
                             String(format: "%.1f°F", self.model.data[index])
             }
             
+            // uses a label function to display data against the line just like the
+            // bar chart but uses a different color for the line.
+            LineChartView(model: self.model,
+                          showGrid: self.showGrid,
+                          showShadow: self.showShadow,
+                          lineColor: Color.blue) { (_, index) in
+                            String(format: "%.1f°F", self.model.data[index])
+            }
+            
             //
             // Some Controls
             //
