@@ -1,7 +1,7 @@
 # SwiftUICharts
 Simple, animated, charts using SwiftUI
 
-This project shows one way to use SwiftUI to make some simple charts. There is a `ColumnChart` and a `BarChart` that animate when their data changes. The data for these charts is an array of Double values that represent percentages. To make things a little easier there is a `ChartModel` that can take any array of Double and transform it into percentage values.
+This project shows one way to use SwiftUI to make some simple charts. There is a `ColumnChart`, a `BarChart`, a `LineChart`, and a `PieChart` that animate when their data changes. The data for these charts is an array of Double values that represent percentages. To make things a little easier there is a `ChartModel` that can take any array of Double and transform it into percentage values.
 
 An example shows how to use the chart views, including custom data formatters to show values on the charts. Axes and grid lines can also be applied.
 
@@ -9,14 +9,16 @@ An example shows how to use the chart views, including custom data formatters to
 
 The charts themselves are pretty simple. They are composed of SwiftUI `Shape` elements and then layered in a `ZStack` to give the desired effect:
 * `GridView` (optional)
-* The chart (`BarChart` or `ColumnChart`)
+* The chart (`BarChart`, `ColumnChart`, `LineChart`, or `PieChart`)
 * `AxisView` (optional)
 
 ### Model
 
 The data for the chart is an array of `Double` values. The values are percentages of the chart's primary dimension (height for `ColumnChart`, width for `BarChart`). The model, `ChartModel`, converts the user data (temperatures in my example) into percentages so the chart user does not have do that conversion. The model can either use the data or it can be given a specific range (eg, -100°F to +100F) when calculating the percentages.
 
-The percentages are then stored in a very special data type: `AnimatableVector` (see below) which is `@Published` in the model. When the model's data changes it triggers a new set of percentages and refreshes this vector.
+The data for the `PieChart` is a little different as each datum represents a wedge in the pie. There is a `PieChartModel`, subclassed from `ChartModel`, to aid in the transformation and sets up the vector as wedge angles.
+
+The percentages (or angles) are then stored in a very special data type: `AnimatableVector` (see below) which is `@Published` in the model. When the model's data changes it triggers a new set of values and refreshes this vector.
 
 ### AnimatableVector
 
