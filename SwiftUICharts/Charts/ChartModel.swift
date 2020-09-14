@@ -42,7 +42,7 @@ class ChartModel: NSObject, ObservableObject {
     
     // Creates the vector data by transforming the data along with the dataRange
     // (if present).
-    private func transformData() {
+    func transformData() {
         var maxValue = Double.leastNormalMagnitude
         var minValue = Double.greatestFiniteMagnitude
         

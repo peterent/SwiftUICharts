@@ -22,6 +22,13 @@
 		324C19C0250AA77900A63812 /* ColumnChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C19B9250AA77900A63812 /* ColumnChartView.swift */; };
 		324C19C4250AA7CA00A63812 /* ChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C19C3250AA7CA00A63812 /* ChartTests.swift */; };
 		326FB015250E3A21004F0B95 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FB014250E3A21004F0B95 /* LineChartView.swift */; };
+		326FB017250E45CA004F0B95 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FB016250E45CA004F0B95 /* PieChartView.swift */; };
+		326FB019250E4917004F0B95 /* PieChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FB018250E4917004F0B95 /* PieChartModel.swift */; };
+		32FA639C250FE2A00078AFB4 /* BarChartTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FA639B250FE2A00078AFB4 /* BarChartTab.swift */; };
+		32FA639E250FE55D0078AFB4 /* ColumnChartTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FA639D250FE55D0078AFB4 /* ColumnChartTab.swift */; };
+		32FA63A0250FE5F30078AFB4 /* LineChartTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FA639F250FE5F30078AFB4 /* LineChartTab.swift */; };
+		32FA63A2250FE66A0078AFB4 /* PieChartTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FA63A1250FE66A0078AFB4 /* PieChartTab.swift */; };
+		32FA63A4250FEA7D0078AFB4 /* ChartControlBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FA63A3250FEA7D0078AFB4 /* ChartControlBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +49,13 @@
 		324C19B9250AA77900A63812 /* ColumnChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnChartView.swift; sourceTree = "<group>"; };
 		324C19C3250AA7CA00A63812 /* ChartTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartTests.swift; sourceTree = "<group>"; };
 		326FB014250E3A21004F0B95 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		326FB016250E45CA004F0B95 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		326FB018250E4917004F0B95 /* PieChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartModel.swift; sourceTree = "<group>"; };
+		32FA639B250FE2A00078AFB4 /* BarChartTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartTab.swift; sourceTree = "<group>"; };
+		32FA639D250FE55D0078AFB4 /* ColumnChartTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnChartTab.swift; sourceTree = "<group>"; };
+		32FA639F250FE5F30078AFB4 /* LineChartTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartTab.swift; sourceTree = "<group>"; };
+		32FA63A1250FE66A0078AFB4 /* PieChartTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartTab.swift; sourceTree = "<group>"; };
+		32FA63A3250FEA7D0078AFB4 /* ChartControlBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartControlBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +94,11 @@
 				324C19A1250AA74900A63812 /* SceneDelegate.swift */,
 				324C19A3250AA74900A63812 /* ContentView.swift */,
 				324C19C3250AA7CA00A63812 /* ChartTests.swift */,
+				32FA63A3250FEA7D0078AFB4 /* ChartControlBar.swift */,
+				32FA639B250FE2A00078AFB4 /* BarChartTab.swift */,
+				32FA639D250FE55D0078AFB4 /* ColumnChartTab.swift */,
+				32FA639F250FE5F30078AFB4 /* LineChartTab.swift */,
+				32FA63A1250FE66A0078AFB4 /* PieChartTab.swift */,
 				324C19A5250AA74A00A63812 /* Assets.xcassets */,
 				324C19AA250AA74A00A63812 /* LaunchScreen.storyboard */,
 				324C19AD250AA74A00A63812 /* Info.plist */,
@@ -114,6 +133,8 @@
 				324C19B9250AA77900A63812 /* ColumnChartView.swift */,
 				324C19B5250AA77900A63812 /* GraphPaperView.swift */,
 				326FB014250E3A21004F0B95 /* LineChartView.swift */,
+				326FB018250E4917004F0B95 /* PieChartModel.swift */,
+				326FB016250E45CA004F0B95 /* PieChartView.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -191,15 +212,22 @@
 			files = (
 				324C19A0250AA74900A63812 /* AppDelegate.swift in Sources */,
 				324C19BA250AA77900A63812 /* View+If.swift in Sources */,
+				326FB017250E45CA004F0B95 /* PieChartView.swift in Sources */,
 				324C19BE250AA77900A63812 /* AnimatableVector.swift in Sources */,
 				324C19A2250AA74900A63812 /* SceneDelegate.swift in Sources */,
+				326FB019250E4917004F0B95 /* PieChartModel.swift in Sources */,
+				32FA639E250FE55D0078AFB4 /* ColumnChartTab.swift in Sources */,
 				324C19A4250AA74900A63812 /* ContentView.swift in Sources */,
 				324C19C0250AA77900A63812 /* ColumnChartView.swift in Sources */,
+				32FA639C250FE2A00078AFB4 /* BarChartTab.swift in Sources */,
 				324C19BD250AA77900A63812 /* BarChartView.swift in Sources */,
 				324C19BC250AA77900A63812 /* GraphPaperView.swift in Sources */,
 				324C19BF250AA77900A63812 /* AxisView.swift in Sources */,
+				32FA63A2250FE66A0078AFB4 /* PieChartTab.swift in Sources */,
+				32FA63A4250FEA7D0078AFB4 /* ChartControlBar.swift in Sources */,
 				324C19BB250AA77900A63812 /* ChartModel.swift in Sources */,
 				324C19C4250AA7CA00A63812 /* ChartTests.swift in Sources */,
+				32FA63A0250FE5F30078AFB4 /* LineChartTab.swift in Sources */,
 				326FB015250E3A21004F0B95 /* LineChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
